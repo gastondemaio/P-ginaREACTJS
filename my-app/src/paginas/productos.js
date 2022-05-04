@@ -1,4 +1,5 @@
 import React from "react";
+import ItemListContainer from "../components/NavBar/ItemListContainer";
 
 const Productos = () => {
   return (
@@ -10,7 +11,7 @@ const Productos = () => {
         height: "90vh",
       }}
     >
-      <h1>Productos</h1>
+      <ItemListContainer />
     </div>
   );
 };

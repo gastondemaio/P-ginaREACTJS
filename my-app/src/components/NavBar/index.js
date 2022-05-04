@@ -1,4 +1,5 @@
 import React from 'react'
+import CartWidget from './CartWidget';
 import {Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink} from './NavBarElements';
 
 const NavBar = () => {
@@ -26,6 +27,7 @@ const NavBar = () => {
         <NavBtn>
           <NavBtnLink to="signin">Conectarse</NavBtnLink>
         </NavBtn>
+        <CartWidget />
       </Nav>
     </>
   )

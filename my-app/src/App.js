@@ -7,6 +7,7 @@ import Nosotros from './paginas/nosotros';
 import Productos from './paginas/productos';
 import Contacto from './paginas/contacto';
 import Registrarse from './paginas/registrarse';
+import ItemListContainer from './components/NavBar/ItemListContainer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/registrarse" component={Registrarse}  is element={<Registrarse/>}/>
       </Routes>
     </Router>
+    
   );
 }
 
