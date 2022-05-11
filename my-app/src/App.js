@@ -7,9 +7,21 @@ import Nosotros from './paginas/nosotros';
 import Productos from './paginas/productos';
 import Contacto from './paginas/contacto';
 import Registrarse from './paginas/registrarse';
-import ItemListContainer from './components/NavBar/ItemListContainer';
+import Items from './components/ItemList/Items'
 
 function App() {
+  const task = new Promise ((resolve, reject) => {
+    setTimeout(() => {
+      resolve('Exito')
+    },2000)
+  })
+
+  const test = document.getElementById("nav")
+  task.then((res =>{
+    console.log(res)
+    test.innerText = res
+  }))
+
   return (
     <Router>
       <NavBar />
@@ -21,7 +33,6 @@ function App() {
         <Route path="/registrarse" component={Registrarse}  is element={<Registrarse/>}/>
       </Routes>
     </Router>
-    
   );
 }
 
