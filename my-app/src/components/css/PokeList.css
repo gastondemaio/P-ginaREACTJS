@@ -1,0 +1,12 @@
+.PokeList-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 40px 0 40px 0;
+    gap: 40px;
+}
+
+.PokeList-container {
+    display: flex;
+    flex_direction: column;
+    align-items: center;
+}

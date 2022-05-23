@@ -1,5 +1,5 @@
 import React from 'react'
-import CartWidget from './CartWidget';
+import '../css/NavBar.css'
 import {Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink} from './NavBarElements';
 
 const NavBar = () => {
@@ -11,23 +11,19 @@ const NavBar = () => {
         </NavLink>
         <Bars />
         <NavMenu>
-          <NavLink to="/nosotros" activeStyle>
+          <NavLink to="/Nosotros" activeStyle>
             Nosotros
           </NavLink>
-          <NavLink to="/productos" activeStyle>
-            Productos
+          <NavLink to="/PokeDetails" activeStyle>
+            Pokes
           </NavLink>
           <NavLink to="/contacto" activeStyle>
             Contacto
           </NavLink>
-          <NavLink to="/registrarse" activeStyle>
-            Registrarse
-          </NavLink>
         </NavMenu>
         <NavBtn>
-          <NavBtnLink to="signin">Conectarse</NavBtnLink>
+          <NavBtnLink to='/carrito'>Carrito <img className='carritoImg' src="https://cdn-icons-png.flaticon.com/512/107/107831.png?w=826&t=st=1653258525~exp=1653259125~hmac=96f73d215a5b8bc6f8e1856b5edb3b468082ebe24aaa9f5cc28010b90b1ae2a8"/></NavBtnLink>
         </NavBtn>
-        <CartWidget />
       </Nav>
     </>
   )
