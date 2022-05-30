@@ -1,28 +1,28 @@
 import React from 'react'
-
-import NavBar from "./components/NavBar/NavBar";
+import './App.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import Contacto from "./views/Contacto";
-import Nosotros from './views/Nosotros';
-import Inicio from './views/Inicio'
-import PokeDetails from './views/PokeDetails';
-import PokeList from './components/PokeList/PokeList';
+
+//Components
+import Navbar from "./components/Navbar/navbar"
+
+//Views
+import Inicio from './views/Inicio/Inicio'
+import ItemDetails from './views/ItemDetails/ItemDetails';
+import Contacto from "./views/Contacto/Contacto";
+import Carrito from "./views/Carrito/Carrito"
 
 
 const App = () => {
   return (
-      <Router>
-        <div className='App'>
-        <NavBar />
-          <Routes>
-            <Route path="/" element={<Inicio/>} />
-            <Route path="/nosotros" element={<Nosotros/>}/>
-            <Route path="/contacto" element={<Contacto/>}/>
-            <Route path='/detail/:id' element={<PokeDetails/>}></Route>
+    <Router>
+      <Navbar/>
+      <Routes>
+          <Route path="/inicio" element={<Inicio/>}/>
+          <Route path='/details/:id' element={<ItemDetails/>}/>
+          <Route path="/contacto" element={<Contacto/>}/>
+          <Route path="/carrito" element={<Carrito/>}/>
         </Routes>
-      </div>
     </Router>
-    
   )
 }
 
