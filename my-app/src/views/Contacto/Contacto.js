@@ -1,8 +1,9 @@
 import React from 'react'
+import ItemCount from '../../components/ItemCount/ItemCount'
 
 const Contacto = () => {
   return (
-    <div>Hola por tercera vez jijo</div>
+    <div><ItemCount/></div>
   )
 }
 

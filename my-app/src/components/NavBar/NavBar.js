@@ -19,6 +19,7 @@ const NavBar = () => {
         </NavMenu>
         <NavBtn>
           <NavBtnLink to="/carrito">Carrito</NavBtnLink>
+          
         </NavBtn>
       </Nav>
     </>
