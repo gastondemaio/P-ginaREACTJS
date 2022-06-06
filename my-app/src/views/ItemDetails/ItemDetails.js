@@ -21,7 +21,7 @@ const ItemDetails = () => {
     <div className='ItemList-detail'>
 			{items.map((item) => {
 				return (
-					<div key={item.char_id}>
+					<div key={item.id}>
 						<ItemCard data={item} />
 					</div>
 				);

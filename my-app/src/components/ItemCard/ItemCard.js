@@ -20,13 +20,7 @@ const ItemCard = ({data}) => {
             Name: {data.name}
           </Typography>
           <Typography variant='body2' color='text.secondary'>
-            Status: {data.status}
-          </Typography>
-          <Typography variant='body2' color='text.secondary'>
-            Nickname: {data.nickname}
-          </Typography>
-          <Typography variant='body2' color='text.secondary'>
-            Birthday: {data.birthday}
+            Ingredientes: {data.ingredientes}
           </Typography>
         </CardContent>
       </Card>
