@@ -1,28 +1,39 @@
 import React from 'react'
 import './App.css';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route, BrowserRouter} from 'react-router-dom';
+import Navbar from "./header/Navbar/navbar"
+import Cart from "./components/body/cart/Cart";
+import Contact from "./components/body/contact/Contact";
+import ItemDetailContainer from "./components/body/itemDetail/ItemDetailContainer";
+import { CartProvider } from './context/CartContext';
+import ItemListContainer from './components/body/itemList/ItemListContainer';
 
-//Components
-import Navbar from "./components/Navbar/navbar"
-
-//Views
-import Inicio from './views/Inicio/Inicio'
-import ItemDetails from './views/ItemDetails/ItemDetails';
-import Contacto from "./views/Contacto/Contacto";
-import Carrito from "./views/Carrito/Carrito"
 
 
 const App = () => {
   return (
     <Router>
-      <Navbar/>
-      <Routes>
-          <Route path="/inicio" element={<Inicio/>}/>
-          <Route path='/details/:id' element={<ItemDetails/>}/>
-          <Route path="/contacto" element={<Contacto/>}/>
-          <Route path="/carrito" element={<Carrito/>}/>
-        </Routes>
+        <CartProvider>
+        <div className="App">
+        <Navbar />
+          <Routes>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+            <Route path="/cart">
+              <Cart />
+            </Route>
+            <Route path="/products/:id">
+              <ItemDetailContainer />
+            </Route>
+            <Route path="/">
+              <ItemListContainer />
+            </Route>
+          </Routes>
+        </div>
+      </CartProvider> 
     </Router>
+
   )
 }
 

@@ -1,0 +1,21 @@
+.productListWrapper {
+    padding: 15px;
+}
+
+.productList {
+    display: flex;
+    justify-content: space-around;
+}
+
+.productWrapper {
+    border: 1px rgb(0, 0, 0)olid;
+    padding: 5px;
+    text-decoration: none;
+} 
+
+.productWrapper:hover {
+    background-color: rgb(80, 79, 79);
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+}
+        

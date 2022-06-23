@@ -1,0 +1,33 @@
+.counterWrapper {
+    max-width: 350px;
+    margin: auto;
+}
+.counterWrapper .counter {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.counterWrapper .counter .buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0px;
+}
+.counterWrapper .counter .buttons .button {
+    background-color: transparent;
+    border: none;
+    font-size: 70px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.counterWrapper .counter .buttons .button:focus {
+    outline: none;
+}
+.counterWrapper .counter .buttons .button:hover {
+    color: red;
+    cursor: pointer;
+}
+.counterWrapper .counter .buttons .num {
+    font-size: 50px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
