@@ -1,18 +1,19 @@
 import React from 'react'
 import './App.css';
 import {BrowserRouter as Router, Routes, Route, BrowserRouter} from 'react-router-dom';
-import Navbar from "./header/Navbar/navbar"
+import Navbar from "./components/header/Navbar/navbar"
 import Cart from "./components/body/cart/Cart";
 import Contact from "./components/body/contact/Contact";
 import ItemDetailContainer from "./components/body/itemDetail/ItemDetailContainer";
-import { CartProvider } from './context/CartContext';
+import { CartProvider } from './components/context/CartContext'
 import ItemListContainer from './components/body/itemList/ItemListContainer';
 
 
 
 const App = () => {
   return (
-    <Router>
+    <BrowserRouter>
+      <Router>
         <CartProvider>
         <div className="App">
         <Navbar />
@@ -33,6 +34,8 @@ const App = () => {
         </div>
       </CartProvider> 
     </Router>
+    </BrowserRouter>
+    
 
   )
 }

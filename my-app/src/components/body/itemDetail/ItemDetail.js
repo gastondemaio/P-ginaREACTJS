@@ -2,7 +2,7 @@ import React from 'react'
 import { useContext, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ItemsCount } from './../itemsCount/ItemsCount'
-import { CartContext } from '../../../context/CartContext'
+import { CartContext } from '../../context/CartContext'
 
 export const ItemDetail = ({ product }) => {
     const [qty, setQty] = useState(0);

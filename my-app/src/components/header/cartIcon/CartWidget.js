@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import cartIcon from "../../assets/one-hamburguer.png"
+import cartIcon from "../cartIcon/one-hamburguer.png"
 
 
 const CartWidget = () => {
